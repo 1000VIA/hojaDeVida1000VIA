@@ -1,151 +1,299 @@
-*{
+* {
   margin: 0;
-  padding:0;
+  padding: 0;
+  font-family: sans-serif;
 }
-#container{
+#container {
   width: 1200px;
   height: 1000px;
   margin: 0.5em auto;
   padding: 0.5em;
 }
- header{
+header {
   height: 15%;
-  background-color: #248CC9;
+  background-color: #248cc9;
   border-radius: 1em;
   margin: 1em;
 }
-nav{
+nav {
   height: 10%;
   border-radius: 1em;
   margin: 1em;
 }
-main{
+main {
   height: 97%;
   background-color: #ffffff;
   margin: 1em;
 }
-footer{
+footer {
   height: 15%;
   background-color: #424242;
   border-radius: 1em;
   margin: 1em;
 }
-.logo{
+.logo {
   height: 90%;
   width: 26%;
-  /* background-color: #248CC9; */
   border-radius: 1em;
   float: left;
   margin: 0.5em;
 }
-.img-logo{
+.img-logo {
   height: 60%;
-   width: 50%;
+  width: 50%;
   margin-top: 20px;
   margin-left: 5em;
-  box-shadow: 3px 15px 12px 3px #3535358a
+  box-shadow: 3px 15px 12px 3px #3535358a;
 }
-.nav-header{
+.nav-header {
   height: 90%;
   width: 71%;
   border-radius: 1em;
   float: right;
   margin: 0.5em;
 }
-ul {
+ul.nav-icon {
   width: 100%;
-  height: 134px;
+  height: 100%;
   display: flex;
   border-radius: 1rem;
   list-style: none;
   align-items: center;
   justify-content: space-around;
 }
-.aTag{
+.aTag {
   text-decoration: none;
   color: wheat;
   font-size: 20px;
   box-shadow: 3px 15px 12px 3px #3535358a;
 }
-nav ul li a:hover{
-  background-color: #0E3250;
+nav ul li a:hover {
+  background-color: #0e3250;
 }
-#section-main{
+#section-main {
   height: 95%;
-  width: 71%;
+  width: 47%;
   background-color: #a4a4a4;
   border-radius: 1em;
   float: right;
   margin: 0.5em;
 }
-#aside-main{
+#aside-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   height: 95%;
-  width: 25%;
+  width: 50%;
   background-color: #a4a4a4;
   border-radius: 1em;
   float: left;
   margin: 0.5em;
 }
-.img-photo{
+.img-photo {
+  width: 401px;
+  height: 401px;
+}
+
+.article {
+  width: 96%;
+  height: 27%;
+  background: #424242;
   margin: 1em;
-  width: 30px;
-  height: 30px;
-  border: 2px solid black;
-  border-radius: 50%;
-  box-shadow: -4px 4px 10px 3px #3535358a;
-}
-.icon-contact{
-  font-size: 20px;
-  color: black;
-  margin: 5px;
-  padding: 10px;
-}
-.article{
-width: 96%;
-height: 27%;
-background: #424242;
-margin: 1em;
-border-radius: 1em;
+  border-radius: 1em;
 }
 /*
 styles Cards
 */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body,
 html {
-    height: 100%;
-    min-height: 100%;
+  height: 100%;
+  min-height: 100%;
 }
 
 body {
-    font-family: 'Roboto',
-    sans-serif;
-    margin: 0;
-    background-color: #e7e7e7;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: #e7e7e7;
 }
 /* Credit Card */
 .credit-card {
-width: 240px;
-    height: 100px;
-    margin: 24px auto 0;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    background-color: #fff;
-    box-shadow: 1px 2px 3px 0 rgba(0,0,0,.10);
+  width: 240px;
+  height: 100px;
+  margin: 24px auto 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
-
-
 .form-header {
-    height: 41px;
-    padding: 17px 30px 0;
-    border-bottom: 1px solid #e1e8ee;
+  height: 41px;
+  padding: 17px 30px 0;
+  border-bottom: 1px solid #e1e8ee;
 }
 
 .form-body {
-    height: 340px;
-    padding: 30px 30px 20px;
+  height: 340px;
+  padding: 30px 30px 20px;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 87%;
+  left: 34%;
+  width: 400px;
+  height: 500px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+.imgBx {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: 2;
+  background: #000;
+}
+.box:hover .imgBx {
+  transform: translateY(-100px);
+}
+/* .imgBx img {
+  transition: 0.5;
+} */
+.box:hover .imgBx img {
+  opacity: 0.5;
+}
+.social-icon {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.social-icon li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+}
+.social-icon li a {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background: #fff;
+  color: #262626;
+  margin: 0 5px;
+  border-radius: 50%;
+  transition: 0.5s;
+  transform: translateY(200px);
+  opacity: 0;
+}
+.box:hover .social-icon li a {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.box .social-icon li a .fa {
+  transition: 0.5s;
+  font-size: 24px;
+  line-height: 50px;
+}
+.box .social-icon li a:hover .fa {
+  transform: rotateY(360deg);
+}
+.box:hover .social-icon li:nth-child(1) a {
+  transition-delay: 0s;
+}
+.box:hover .social-icon li:nth-child(2) a {
+  transition-delay: 0.2s;
+}
+.box:hover .social-icon li:nth-child(3) a {
+  transition-delay: 0.4s;
+}
+.box:hover .social-icon li:nth-child(4) a {
+  transition-delay: 0.6s;
+}
+.box:hover .social-icon li:nth-child(5) a {
+  transition-delay: 0.8s;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  padding: 10px;
+  z-index: 1;
+}
+.details h2 {
+  margin: 10px 0 0;
+  padding: 0;
+  text-align: center;
+}
+
+.details h2 span {
+  color: #bbb;
+  font-size: 16px;
+  text-align: 16px;
+}
+.habilidades h1 {
+  margin: 1em;
+}
+/* box-percent */
+.skills {
+  width: 500px;
+  margin: 60px auto;
+  color: black;
+}
+.skills .lenguaje {
+  margin: 20px 0;
+}
+.bar {
+  background: #0e325085;
+  display: block;
+  height: 2px;
+  border: 1px solid rgba(0, 0, 0, 0, 3);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #2187e7b3;
+}
+.bar span {
+  height: 2px;
+  float: left;
+  background: #03a9f4;
+}
+.javascript {
+  width: 50%;
+}
+.react {
+  width: 50%;
+}
+.html {
+  width: 80%;
+}
+.css {
+  width: 70%;
+}
+.bootstrap {
+  width: 60%;
+}
+.skill {
+  width: 100%;
+  height: 38px;
+  border-radius: 1rem;
+  list-style: none;
 }
